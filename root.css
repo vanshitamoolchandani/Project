@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600;700&family=Yellowtail&display=swap');
+@import url('https://root-ui.netlify.app/styles/styles-global/root.css');
+
+:root {
+    --primary-color: #43AA8B  ;
+    --primary-light-color: #7bc4ae  ;
+    --primary-vlight-color: #def0eb;
+    --secondary-color:#EF3054 ;
+    --secondary-light-color: #fbc5cf ;
+    --secondary-vlight-color: #fde8ec ;
+    --accent-color: #F5D0C5;
+    --black-color: #050609;
+    --font-family-1: 'Times New Roman', Times, serif;
+    --font-family-2: 'Courier New', Courier, monospace;
+    --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+h2::first-letter{
+    text-transform: uppercase;
+}
+
+body::spelling-error {
+    text-decoration: wavy red;
+  }
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.nav-container {
+    margin: 0;
+    background-color: var(--primary-color);
+    position: relative;
+    z-index: 9;
+}
+.nav-logo-txt {
+    font-family: var(--font-family-1);
+}
+.nav-logo{
+    margin: auto auto auto 2rem;
+}
+.nav-child{
+    align-items: center;
+}
+.btn-icon {
+    color: var(--white-color);
+    margin: 0.5rem 1rem;
+}
+.badge-icon{
+    font-size: 1.75rem;
+}
+.badge-icon-secondary{
+    left: 1.25rem;
+
+}
+
+.input {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 15rem;
+    height: 2rem;
+    margin: 0;
+    padding: 0 1rem;
+
+}
+
+input:focus{
+    outline: none;
+}
+
+/* Footer */
+
+footer{
+    background-color: var(--black-matte-color);
+    height: 20rem;
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: auto;
+    text-align: center;
+    color: var(--accent-color);
+    font-family: var(--font-family-2);
+    position: relative;
+}
+footer h4{
+    padding-top: 1rem;
+}
+.social{
+    color: var(--white-color);
+    font-size: 3rem;
+    padding: 1rem;
+}
+.link{
+    text-decoration: none;
+}
+.list-type-inline{
+    padding: 0;  
+}
+.list-type-none{
+    list-style: none;
+}
+.footer-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-details li{
+    font-size: small;
+}
+.vertical-line-footer{
+    height: 5rem;
+    border: 1px solid var(--asset-color);
+}
+.list-heading{
+    font-weight: 600;
+    padding: 10px 0;
+}
+.flex-row-between{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.btn-rect{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width: 600px) {
+    .img-container {
+        display: block;
+    }
+    .breed-layout{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-basic{
+        margin-top: 1rem;
+    }
+    .sub-heading{
+        border: #000;
+        font-size: small;
+        align-items: center;
+        line-height: 0rem;
+    }
+    .ctg-layout {
+        display: block;
+        margin: 0 10rem;
+        align-items: center;
+        
+    }
+    .sub-heading .adoption-center{
+        border: #000;
+        font-size: smaller;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .img-container {
+        display: block;
+    }
+    .breed-layout{
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: auto auto;
+    }
+    .sub-heading{
+        border: #000;
+        font-size: small;
+        align-items: center;
+        line-height: 0rem;
+    }
+    .ctg-layout {
+        grid-template-columns: auto auto auto;
+    }
+    .sub-heading .adoption-center{
+        border: #000;
+        font-size: smaller;
+        align-items: center;
+    }
+}

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    </link>
+    <link href="/Pages/Product-Listing-Page/styles.css" rel="styleSheet">
+    <title>Product Listing</title>
+</head>
+
+<body>
+    <nav class="nav-container">
+        <div class="nav-child">
+            <a href="/index.html" class="nav-content"><i class="badge-icon nav-logo fas fa-paw"></i></a>
+            <a href="/index.html" class="link">
+                <h2 class="nav-content nav-logo-txt">DOGS HUT</h2>
+            </a>
+        </div>
+        <div class="nav-child">
+            <!-- <div>
+                <input type="search" placeholder="Search Product..." class="input">
+            </div> -->
+            <div>
+                <button class="btn-icon btn-icon-secondary">
+                    <div class="badge-container">
+                        <i class="badge-icon fas fa-search"></i>
+                    </div>
+                </button>            
+            </div>
+            <a href="/Pages/Wishlist/index.html">
+
+                <button class="btn-icon btn-icon-secondary">
+                    <div class="badge-container">
+                        <i class="badge-icon far fa-heart"></i>
+                        <span id="fav-badge" class="badge-icon-secondary badge-round badge-icon-num">2</span>
+                    </div>
+                </button>
+            </a>
+            <a href="/Pages/Cart/index.html">
+
+                <button class="btn-icon btn-icon-secondary">
+                    <div class="badge-container">
+                        <i class="badge-icon fas fa-shopping-cart"></i>
+                        <span id="cart-badge" class="badge-icon-secondary badge-round badge-icon-num">2</span>
+                    </div>
+                </button>
+            </a>
+            <a href="/Pages/Wishlist/index.html">
+
+                <button class="btn-icon btn-icon-secondary">
+                    <div class="badge-container">
+                        <img alt="round-image-avatar" class="avatar-rd avatar-xxs" src="/assets/avatar-img.png">
+                    </div>
+                </button>
+            </a>
+        </div>
+    </nav>
+
+    <div class="main-sec-product">
+
+        <!-- SIDEBAR -->
+
+
+        <aside class="sidebar">
+            <h4>Breeds</h4>
+            <div id="select-multi-btn">
+                <label id="select-btn" class="sidebar-input"><input class="input-sidebar" type="checkbox">Labrador</label>
+                <label id="select-btn" class="sidebar-input"><input class="input-sidebar" type="checkbox">Labrador</label>
+                <label id="select-btn" class="sidebar-input"><input class="input-sidebar" type="checkbox">Labrador</label>
+                <label id="select-btn" class="sidebar-input"><input class="input-sidebar" type="checkbox">Labrador</label>
+            </div>
+            <h4>Category</h4>
+            <div id="select-multi-btn">
+                <label id="select-btn" class="sidebar-input"><input class="input-sidebar" type="checkbox">Dog Beds</label>
+                <label id="select-btn" class="sidebar-input"><input class="input-sidebar" type="checkbox">Dog Beds</label>
+                <label id="select-btn" class="sidebar-input"><input class="input-sidebar" type="checkbox">Dog Beds</label>
+                <label id="select-btn" class="sidebar-input"><input class="input-sidebar" type="checkbox">Dog Beds</label>
+            </div>
+            <h4>Rating</h4>
+            <div id="select-multi-btn">
+                <label id="select-btn" class="sidebar-input"><input name="rating" type="radio">Above 4 stars</label>
+                <label id="select-btn" class="sidebar-input"><input name="rating" type="radio">Above 3 stars</label>
+                <label id="select-btn" class="sidebar-input"><input name="rating" type="radio">Above 2 stars</label>
+                <label id="select-btn" class="sidebar-input"><input name="rating" type="radio">Above 1 stars</label>
+            </div>
+            <h4>Availability</h4>
+            <div id="select-multi-btn">
+                <label id="select-btn" class="sidebar-input"><input class="input-sidebar" type="checkbox">Available</label>
+                <label id="select-btn" class="sidebar-input"><input class="input-sidebar" type="checkbox">Out of Stock</label>
+            </div>
+            <h4>Sort By</h4>
+            <div>
+                <label class="sidebar-input"><input name="Sort by price" type="radio">Price - Low to High</label>
+                <label class="sidebar-input"><input name="Sort by price" type="radio">Price - High to Low</label>
+            </div>
+        </aside>
+
+        <div class="main-product-list">
+
+            <!-- product 1 -->
+            <div class="card-basic ">
+                <div class="card-txt-container">
+                    <div>
+                        <h6 class="badge-upper">Sale 40% off</h6>
+                    </div>
+                    <img alt="card-img-headphone" class="basic-img" src="/assets/dog-bed.png">
+                    <div class="txt-margin">
+                        <div>
+                            <h2 class="card-heading">Dog Bed</h2>
+                            <h2 class="card-subheading">$12.99 <span class="card-txt-red">$32.49 </span>
+                                <span class="card-txt-secondary">(40% OFF)</span>
+                            </h2>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="btn-container">
+                    <div class="btn-standard-container">
+                        <button class="btn-rect btn-out-primary cart-btn">Add to Cart</button>
+                        
+                        <button class="btn-icon btn-icon-secondary fav-btn"><i onclick="changeIcon(this)" class="far fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- product 2 -->
+            <div class="card-basic ">
+                <div class="card-txt-container">
+                    <div>
+                        <h6 class="badge-upper">Sale 40% off</h6>
+                    </div>
+                    <img alt="card-img-headphone" class="basic-img" src="/assets/dog-bed.png">
+                    <div class="txt-margin">
+                        <div>
+                            <h2 class="card-heading">Dog Bed</h2>
+                            <h3 class="card-subheading">$12.99 <span class="card-txt-red">$32.49 </span>
+                                <span class="card-txt-secondary">(40% OFF) </span>
+                            </h3>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="btn-container">
+                    <div class="btn-standard-container">
+                        <button class="btn-rect btn-out-primary cart-btn">Add to Cart</button>
+                        
+                        <button class="btn-icon btn-icon-secondary fav-btn"><i onclick="changeIcon(this)" class="far fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- product 3 -->
+            <div class="card-basic ">
+                <div class="card-txt-container">
+                    <div>
+                        <h6 class="badge-upper">Sale 40% off</h6>
+                    </div>
+                    <img alt="card-img-headphone" class="basic-img" src="/assets/dog-bed.png">
+                    <div class="txt-margin">
+                        <div>
+                            <h2 class="card-heading">Dog Bed</h2>
+                            <h3 class="card-subheading">$12.99 <span class="card-txt-red">$32.49 </span>
+                                <span class="card-txt-secondary">(40% OFF)</span>
+                            </h3>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="btn-container">
+                    <div class="btn-standard-container">
+                        <button class="btn-rect btn-out-primary cart-btn">Add to Cart</button>
+                        
+                        <button class="btn-icon btn-icon-secondary fav-btn"><i onclick="changeIcon(this)" class="far fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- product 4 -->
+            <div class="card-basic ">
+                <div class="card-txt-container">
+
+                    <img alt="card-img-headphone" class="basic-img" src="/assets/dog-bed.png">
+                    <div class="txt-margin">
+                        <div>
+                            <h2 class="card-heading">Dog Bed</h2>
+                            <h3 class="card-subheading">$12.99 <span class="card-txt-red">$32.49 </span>
+                                <span class="card-txt-secondary">(40% OFF)</span>
+                            </h3>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="btn-container">
+                    <div class="btn-standard-container">
+                        <button class="btn-rect btn-out-primary cart-btn">Add to Cart</button>
+                        
+                        <button class="btn-icon btn-icon-secondary fav-btn"><i onclick="changeIcon(this)" class="far fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- product 5 -->
+            <div class="card-basic ">
+                <div class="card-txt-container">
+                    <div class="ribbon">
+                        <span class="ribbon__content">FRESH ARRIVAL</span>
+                    </div>
+                    <img alt="card-img-headphone" class="basic-img" src="/assets/dog-bed.png">
+                    <div class="txt-margin">
+                        <div>
+                            <h2 class="card-heading">Dog Bed</h2>
+                            <h3 class="card-subheading">$12.99 
+                                <span class="card-txt-red">$32.49 </span>
+                                <span class="card-txt-secondary">(40% OFF)</span>
+                            </h3>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="btn-container">
+                    <div class="btn-standard-container">
+                        <button class="btn-rect btn-out-primary cart-btn">Add to Cart</button>
+                        
+                        <button class="btn-icon btn-icon-secondary "><i onclick="changeIcon(this)" class="btn-fav far fa-heart "></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <h4>Created by Vanshita Moolchandani</h4>
+        <h2 class="heading-alignc"></h2>
+        <ul class="list">
+            <li class="list-type-inline">
+                <a class="link" href="https://www.linkedin.com/in/vanshita-moolchandani/">
+                    <i class="fab fa-linkedin social"></i>
+                </a>
+            </li>
+            <li class="list-type-inline">
+                <a class="link" href="">
+                    <i class="fab fa-twitter social"></i>
+                </a>
+            </li>
+            <li class="list-type-inline">
+                <a class="link" href="https://github.com/vanshitamoolchandani">
+                    <i class="fab fa-github social"></i>
+                </a>
+            </li>
+        </ul>
+        <div class="footer-details">
+            <ul class="component-content list-type-none tu-left">
+                <li class="list-heading">ABOUT</li>
+                <li>About Us</li>
+                <li>Careers</li>
+                <li>Blogs</li>
+            </ul>
+            <div class="vertical-line-footer"></div>
+            <ul class="component-content list-type-none tu-left">
+                <li class="list-heading">HELP</li>
+                <li>Payments</li>
+                <li>Shipping</li>
+                <li>Cancellati  on and Return</li>
+            </ul>
+            <div class="vertical-line-footer"></div>
+            <ul class="component-content list-type-none tu-left">
+                <li class="list-heading">CONTACT US</li>
+                <li>Email: dogshut@hotmail.com</li>
+                <li>Phone: 234234234</li>
+                <li>Website: dogshut.com</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<script src="/Pages/product-listing-page/app.js" type = 'text/javascript'></script>
+</html>

@@ -1,0 +1,40 @@
+@import url('../DogsHut-Neog/root.css');
+@import url('/styles.css');
+
+
+.form-login{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    height: 16rem;
+    background-color: var(--white-color);
+    margin: 5rem auto;
+    vertical-align:middle;
+    padding: 1rem 2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+}
+
+.form-login .input{
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid var(--black-matte-color);
+}
+.flex-row-between{
+    margin: 1rem 0;
+}
+.input-padding{
+    padding-bottom: 1rem;
+}
+.form-login .btn-link{
+    font-size: small;
+}
+.btn-div{
+    display: flex;
+    justify-content: center;
+}
+.form-login .btn-rect{
+    height: 2.5rem;
+    width: 80%;
+}

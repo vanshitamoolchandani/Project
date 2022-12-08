@@ -1,0 +1,234 @@
+@import url('/root.css');
+
+
+
+.img-container {
+    margin: 2rem 1rem;
+    display: grid;
+    grid-template-areas: 
+    "sec-header sec-header"
+    "sec sec-img";
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--secondary-vlight-color);
+    grid-area: sec;
+}
+.badge-upper{
+    grid-area: sec-header;
+    margin: 0;
+    padding: 1rem 0rem;
+    font-size: 1rem;
+    font-family: var(--font-family-2)
+}
+
+
+.img-responsive {
+    width: 100%;
+    grid-area: sec-img;
+    max-height:100%; 
+    max-width:100%;
+    
+}
+
+
+.heading {
+    font-size: 4.5rem;
+    font-weight: 400;
+    text-align: center;
+    font-stretch: expanded;
+    align-self: center;
+    /* padding: 0 2px; */
+}
+.heading span{
+    color: var(--secondary-color);
+}
+
+.sub-heading {
+    margin: 4rem auto;
+    width: 80%;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 0.1em;
+    font-size: var(--heading-size);
+}
+
+.sub-heading span {
+    background: var(--background-color);
+    padding: 0 10px;
+}
+
+
+.sub-heading .btn-link{
+    font-weight: var(--content-weight);
+    font-size: var(--content-size);
+    border-radius: 0.5rem;
+    color: var(--primary-color);
+}
+.sub-heading .btn-link:hover{
+    color: var(--secondary-color);
+}
+
+.btn-icon{
+    cursor: pointer;
+}
+
+/* Section 2 */
+
+/* Explore Dog Breeds */
+.breed-layout{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 1rem;
+}
+
+.breed-layout .btn-link{
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--white-color);
+    font-family: var(--font-family-1);
+}
+
+.breed-layout .card-basic{
+    height: 16rem;
+    width: 18rem; 
+}
+
+.centered{
+    font-size: 2rem;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-transform: uppercase;
+}
+.ctg-layout{
+    display: grid;
+    grid-template-columns: auto auto auto auto;   
+    gap: 1rem;
+    text-align: center;
+    margin: 0 4rem ;
+}
+
+/* Featured Categories */
+
+.ctg-layout .card-basic{
+    height: 13rem;
+    width: 15rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.card-secondary{
+    background-color: var(--secondary-vlight-color);
+}
+
+.card-primary{
+    background-color: var(--primary-vlight-color);
+}
+
+.img-ctg{
+    height: 10rem;
+    padding-left: 1.5rem;
+}
+
+.ctg-layout .btn-link{
+    left: 3rem;
+    bottom: 3%;
+    position: absolute;
+    font-size: var(--sub-heading-size);
+    color: var(--black-matte-color);
+}
+
+.ctg-layout + .btn-link{
+    font-weight: bold;
+}
+
+/* Adoption */
+
+.adoption-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.adoption-layout{
+    width:30.5rem;
+    padding: 0;
+    margin: 0rem 3rem;
+}
+
+.img-grid{
+    height: 6.5rem;
+    width: 10rem;
+    column-count: 10;
+    object-fit: cover;
+}
+
+.img-grid-last{
+    height: 6.5rem;
+    width: 10rem;
+    background-color: var(--primary-color);
+    object-fit: fill;
+}
+
+.ad-list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+
+}
+
+@media only screen and (max-width: 600px) {
+        /* home screen */
+    .img-container {
+        display: block;
+    }
+    .breed-layout{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-basic{
+        margin-top: 1rem;
+    }
+    .sub-heading{
+        border: #000;
+        font-size: small;
+        align-items: center;
+        line-height: 0rem;
+    }
+    .ctg-layout {
+        display: block;
+        margin: 0 10rem;
+        align-items: center;
+        
+    }
+    .sub-heading .adoption-center{
+        border: #000;
+        font-size: smaller;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* home screen */
+    .img-container {
+        display: block;
+    }
+    .breed-layout{
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: auto auto;
+    }
+    .sub-heading{
+        border: #000;
+        font-size: small;
+        align-items: center;
+        line-height: 0rem;
+    }
+    .ctg-layout {
+        grid-template-columns: auto auto auto;
+    }
+    .sub-heading .adoption-center{
+        border: #000;
+        font-size: smaller;
+        align-items: center;
+    }
+}
