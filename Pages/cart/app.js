@@ -4,8 +4,6 @@ var inc = document.querySelectorAll('#inc');
 var dec = document.querySelectorAll('#dec');
 var tot = document.querySelector('#total');
 
-
-
 for (let i = 0; i < quantity.length; i++) {
     inc[i].addEventListener('click', () => {
 

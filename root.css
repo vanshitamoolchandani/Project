@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600;700&family=Yellowtail&display=swap');
 @import url('https://root-ui.netlify.app/styles/styles-global/root.css');
 
+/* https://github.com/vanshitamoolchandani/Roots-Component-Library/tree/development */
+
+
 :root {
     --primary-color: #43AA8B  ;
     --primary-light-color: #7bc4ae  ;
